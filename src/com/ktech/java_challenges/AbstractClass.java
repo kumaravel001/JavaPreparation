@@ -24,7 +24,7 @@ class Main
 {
     public static void main(String[] args) {
         MyBook newNovel = new MyBook();
-        newNovel.setTitle("");
+        newNovel.setTitle("A tale of two cities");
         System.out.println("The title is: "+newNovel.getTitle());
     }
 }
