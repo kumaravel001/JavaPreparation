@@ -18,6 +18,12 @@ class MyBook extends AbstractClass
         this.title = title;
     }
 
+    @Override
+    public String toString()
+    {
+        return "{"+title+"}";
+    }
+
 }
 
 class Main
@@ -25,6 +31,6 @@ class Main
     public static void main(String[] args) {
         MyBook newNovel = new MyBook();
         newNovel.setTitle("A tale of two cities");
-        System.out.println("The title is: "+newNovel.getTitle());
+        System.out.println(newNovel);
     }
 }
